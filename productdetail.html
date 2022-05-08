@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - yourFurniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+
+    
+
+    
+    <div class="container">
+        <div class="navbar">
+         <div class="logo">
+             <img src="pictures/yourfurniture.png" width="125px" id="product-detail-img">
+            </div>
+            <nav>
+                <ul id= "MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Customisation</a></li> 
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="pictures/cartt.png" width= "30px" height="30px">
+            <img src="pictures/menu.png" class = "menu-icon" 
+            onclick="menutoggle()">
+        </div>
+       </div>
+
+
+
+       <div class="small-container single-product">
+           <div class="row">
+               <div class="col-4">
+                   <img src="pictures/pr1.png" width = "100%" , height="400" id="product-details-img">
+               </div>
+               <div class="col-4">
+                   <p>Home / Newland Leather Armchair</p>
+                   <h1>Heritage Green</h1>
+                   <h4>£299.99</h4>
+                   <select>
+                       <option>Select Material</option>
+                       <option>Full Grain Leather</option>
+                       <option>Top Grain Leather</option>
+                       <option>Split Grain Leather</option>
+                   </select>
+                   <input type="number" value="1">
+                   <a href="" class = "btn">Add To Cart</a>
+                   <h3>Product Detials</h3>
+                   <p>For sitting to be as healthful as possible, people are meant to shift and change positions frequently. yourFurniture makes this possible by responding to the body’s movements. Its innovative mechanism allows the one-piece seat-and-back shell to slide smoothly and recline up to 10 degrees so that people are encouraged to move naturally and feel comfortable. This sense of ease allows the mind to focus, which can help increase productivity throughout the workday and during meetings.</p>
+               </div>
+           </div>
+       </div>
+
+       
+
+
+
+
+
+
+
+<div class="small-container">
+
+    
+    </div>
+    
+    <div class="row">
+        <div class = "col-4">
+        <img src="pictures/pr1.png">
+        <h4>Leather Armchair – Heritage Green</h4>
+        <p>£299.99</p>
+ 
+      </div> 
+     
+        <div class = "col-4">
+        <img src="pictures/pr2.png">
+        <h4>Dining Table – Solid Acacia Wood</h4>
+        <p>£149.99</p>
+
+      </div>
+   
+        <div class = "col-4">
+        <img src="pictures/prd3.png">
+        <h4>Solid Wood Chest Of Drawers</h4>
+        <p>£79.99</p>
+
+      </div>
+     
+        <div class = "col-4">
+        <img src="pictures/prd4.png">
+        <h4>Athena Bed, Mallard Boutique Velvet</h4>
+        <p>£449.99</p>
+
+      </div>
+      
+      
+        
+    </div>
+    
+</div>
+
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download our App for Android and iOS</p>
+                <div class="app-logo">
+                    <img src="pictures/hotl.png">
+                   
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="pictures/yourfurniture.png" alt="">
+                <p>Our aim is to provide you wish the most comfortable and low priced furniture</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupouns</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+        </div>
+    </div>
+</div>
+    
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight ="0px"; 
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight= "200px"
+                }
+            else
+                {
+                    MenuItems.style.maxHeight="0px"
+                }
+        }
+        if(sessionStorage.getItem("product-img")==null){
+console.log("hey")
+        }else{
+           document.getElementById("product-detail-img").src=JSON.parse(sessionStorage.getItem("product-img"))
+            document.getElementById("product-details-img").src=JSON.parse(sessionStorage.getItem("product-img"))
+            console.log("heymasd")
+        }
+       
+    </script>
+    
+
+
+</body>
+</html>

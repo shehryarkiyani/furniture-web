@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yourFurniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+
+    <div class="header">
+
+    
+    <div class="container">
+        <div class="navbar">
+         <div class="logo">
+             <a href="index.html"><img src="pictures/yourfurniture.png" width="125px"></a>
+            </a>
+            </div>
+            <nav>
+                <ul id= "MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productpage.html">Products</a></li>
+                    <li><a href="cart.html">Basket</a></li> 
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="account.html">Contact</a></li>
+                    <li>
+                        <a href="cart.html"><img src="pictures/cartt.png" width= "30px" height="30px">
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger" onclick="menutoggle()">
+                    <img src="./pictures/menu.png" alt="image"/>
+                </div>
+            </nav>
+           
+            <!-- <img src="pictures/menu.png" class = "menu-icon" 
+            onclick="menutoggle()"> -->
+        </div>
+        <div class="my-row">
+            <div class="mycol-5">
+                <h1 class="hero-heading">Shop the look</h1>
+                <p class="hero-para">High quality furniture at the best prices for you <br> affordable solutions for better living</p>
+                <a href="" class="btn">Explore Now </a>
+
+            </div>
+            <div class="mycol-5">
+                <img src="pictures/couy.png" alt="" height="350">
+
+                
+
+            </div>
+        </div>
+        
+           </div>
+</div>
+
+
+<div class="categories">
+    <div class="smallcontainer">
+        <div class="row">
+            <div class="col-3">
+                <img src="pictures/homeoffice.jpg" alt=""height="350">
+            </div>
+            <div class="col-3">
+                <img src="pictures/warmsofa.jpg" alt=""height="350">
+            </div>
+            <div class="col-3">
+                <img src="pictures/cabinet.jpg" alt=""height="350">
+            </div>
+        </div>
+
+    
+   </div>
+
+</div>
+
+      <div class="smallcontainer">
+        <h2 class= "title">Featured Products</h2 >
+        <div class="row">
+            <div class = "col-4" onclick='AddProductImg("pictures/pr1.png")'>
+            <a href="productdetail.html"><img src="pictures/pr1.png"></a>
+            <a href="productdetail.html"><h4>Leather Armchair – Heritage Green</h4>></a
+            ><p>£299.99</p>
+     
+          </div> 
+         
+            <div class = "col-4" onclick='AddProductImg("pictures/pr2.png")'>
+            <img src="pictures/pr2.png">
+            <h4>Dining Table – Solid Acacia Wood</h4>
+            <p>£149.99</p>
+    
+          </div>
+       
+            <div class = "col-4" onclick='AddProductImg("pictures/prd3.png")'>
+            <img src="pictures/prd3.png">
+            <h4>Solid Wood Chest Of Drawers</h4>
+            <p>£79.99</p>
+    
+          </div>
+         
+            <div class = "col-4" onclick='AddProductImg("pictures/prd4.png")'>
+            <img src="pictures/prd4.png">
+            <h4>Athena Bed, Mallard Boutique Velvet</h4>
+            <p>£449.99</p>
+    
+          </div>
+          
+            
+        </div>
+    </div>
+
+    <h2 class= "title">Latest Products</h2 >
+        <div class="row">
+            <div class = "col-4" onclick='AddProductImg("pictures/pr5.png")'>
+            <img src="pictures/pr5.png">
+            <h4>Reversible Sofa Bed in Green Velvet</h4>
+            <p>£649.99</p>
+     
+          </div> 
+         
+            <div class = "col-4" onclick='AddProductImg("pictures/pr6.png")'>
+            <img src="pictures/pr6.png">
+            <h4>Dining Table – Solid Acacia Wood</h4>
+            <p>£149.99</p>
+    
+          </div>
+       
+            <div class = "col-4" onclick='AddProductImg("pictures/pr7.png")'>
+            <img src="pictures/pr7.png">
+            <h4>Bella Upholstered Ottoman Bed Frame</h4>
+            <p>£895.00</p>
+    
+          </div>
+         
+            <div class = "col-4" onclick='AddProductImg("pictures/pr8.png")'>
+            <img src="pictures/pr8.png">
+            <h4>Kathmandu 2 Over 2 Chest Of Drawers</h4>
+            <p>79.95</p>
+    
+          </div>
+          
+            
+        </div>
+    </div>
+   
+<div class ="offer">
+    <div class="smallcontainer">
+        <div class="my-row">
+            <div class="mycol-5" style="display: flex;">
+                <img src="pictures/offer.png " class="offer-img" >
+            </div>
+
+            <div class="mycol-5" >
+                <p class="hero-para">Only available at yourFurniture</p>
+                <h1 class="hero-heading">Habitat Swift Velvet Cuddle Chair - Moss Green</h1>
+                <small>With elegant curved arms and deep seated cushions, the SWIFT loveseat piave velvet moss green sofa gives a nod to a mid-century design. Created in the Habitat design studio, it offers the upmost comfort with plump, feather filled seat cushions and scattered feather filled back cushions. Finishing touches include dark oak legs and stitch details along the curved arms. Upholstered in our most luxurious velvet, this cotton blend fabric has a deep pile so is extremely soft to touch while also being hardwearing.</small>
+                <a href=""class = "btn"> Buy Now></a>
+        </div>
+    </div>
+        
+</div>
+</div>
+
+<div>
+
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download our App for Android and iOS</p>
+                <div class="app-logo">
+                    <img src="pictures/hotl.png">
+                   
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="pictures/yourfurniture.png" alt="">
+                <p>Our aim is to provide you wish the most comfortable and low priced furniture</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupouns</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+        </div>
+    </div>
+</div>
+    
+    <script>
+       
+        function menutoggle(){
+
+            var MenuItems = document.getElementById("MenuItems");
+            if(MenuItems.style.height == "0px")
+                {
+                    MenuItems.style.height= "250px"
+                }
+            else
+                {
+                    MenuItems.style.height="0px"
+                }
+        }
+        function AddProductImg(img){
+sessionStorage.setItem("product-img",JSON.stringify(img))
+window.location.href="productdetail.html"
+        }
+    </script>
+    
+</body>
+</html>

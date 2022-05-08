@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - yourFurniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+
+    
+
+    
+    <div class="container">
+        <div class="navbar">
+         <div class="logo">
+             <img src="pictures/yourfurniture.png" width="125px">
+            </div>
+            <nav>
+                <ul id= "MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Customisation</a></li> 
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="pictures/cartt.png" width= "30px" height="30px">
+            <img src="pictures/menu.png" class = "menu-icon" 
+            onclick="menutoggle()">
+        </div>
+       </div>
+
+
+
+<div class="small-container cart-page">
+
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="pictures/r2.png">
+                    <div>
+                        <p>Newland Leather Armchair</p>
+                        <small>Price: £299.99</small>
+                        <br>
+                        <a href=""> Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>£299.99</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="pictures/pr5.png">
+                    <div>
+                        <p>Reversible Sofa Bed in Green Velvet</p>
+                        <small>Price: £649.99</small>
+                        <br>
+                        <a href=""> Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>£649.99</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="pictures/prd4.png">
+                    <div>
+                        <p>Athena Bed, Mallard Boutique Velvet</p>
+                        <small>Price: £449.99</small>
+                        <br>
+                        <a href=""> Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>£449.99</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>£1.399.97</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>£5.03</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>£1405.00</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+</div>  
+
+
+
+
+
+
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download our App for Android and iOS</p>
+                <div class="app-logo">
+                    <img src="pictures/hotl.png">
+                   
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="pictures/yourfurniture.png" alt="">
+                <p>Our aim is to provide you wish the most comfortable and low priced furniture</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupouns</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+        </div>
+    </div>
+</div>
+    
+    <script>
+        var MenuItems = document.getElementsById("MenuItems");
+
+        MenuItems.style.maxHeight ="0px"; 
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight= "200px"
+                }
+            else
+                {
+                    MenuItems.style.maxHeight="0px"
+                }
+        }
+    </script>
+    
+
+
+</body>
+</html>

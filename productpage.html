@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - yourFurniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+
+    
+
+    
+    <div class="container">
+        <div class="navbar">
+         <div class="logo">
+             <img src="pictures/yourfurniture.png" width="125px">
+            </div>
+            <nav>
+                <ul id= "MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Customisation</a></li> 
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="pictures/cartt.png" width= "30px" height="30px">
+            <img src="pictures/menu.png" class = "menu-icon" 
+            onclick="menutoggle()">
+        </div>
+        
+  
+</div>
+<div class="smallcontainer">
+
+    <div class="row row-2">
+        <h2>All Products</h2>
+        <select>
+            <option>Default sorting</option>
+            <option>Short by price</option>
+            <option>Short by popular</option>
+            
+        </select>
+    </div>
+    
+    <div class="row">
+        <div class = "col-4">
+        <img src="pictures/pr1.png">
+        <h4>Leather Armchair – Heritage Green</h4>
+        <p>£299.99</p>
+ 
+      </div> 
+     
+        <div class = "col-4">
+        <img src="pictures/pr2.png">
+        <h4>Dining Table – Solid Acacia Wood</h4>
+        <p>£149.99</p>
+
+      </div>
+   
+        <div class = "col-4">
+        <img src="pictures/prd3.png">
+        <h4>Solid Wood Chest Of Drawers</h4>
+        <p>£79.99</p>
+
+      </div>
+     
+        <div class = "col-4">
+        <img src="pictures/prd4.png">
+        <h4>Athena Bed, Mallard Boutique Velvet</h4>
+        <p>£449.99</p>
+
+      </div>
+      
+      
+        
+    </div>
+    <div class="row">
+        <div class = "col-4">
+        <img src="pictures/pr5.png">
+        <h4>Reversible Sofa Bed in Green Velvet</h4>
+        <p>£649.99</p>
+ 
+      </div> 
+     
+        <div class = "col-4">
+        <img src="pictures/pr6.png">
+        <h4>Dining Table – Solid Acacia Wood</h4>
+        <p>£149.99</p>
+
+      </div>
+   
+        <div class = "col-4">
+        <img src="pictures/pr7.png">
+        <h4>Bella Upholstered Ottoman Bed Frame</h4>
+        <p>£895.00</p>
+
+      </div>
+     
+        <div class = "col-4">
+        <img src="pictures/pr8.png">
+        <h4>Kathmandu 2 Over 2 Chest Of Drawers</h4>
+        <p>£79.95</p>
+
+      </div>
+    
+        <div class = "col-4">
+        <img src="pictures/pr10.png">
+        <h4>Luxury 2 Drawers Bedroom Nightstand</h4>
+        <p>£147.99</p>
+
+      </div>
+        <div class = "col-4">
+        <img src="pictures/pr12.png">
+        <h4>Porada Allison Sofa</h4>
+        <p>£795.95</p>
+  
+      </div>
+        <div class = "col-4">
+        <img src="pictures/pr13.png">
+        <h4>Gold Italian Giglio Dining Armchair</h4>
+        <p>£135.99</p>
+      </div>
+        <div class = "col-4">
+        <img src="pictures/pr14.png">
+        <h4>2-Pieces Walnut Swivel Recliner</h4>
+        <p>£445.55</p>
+      </div>
+</div>
+<div class="page-btn">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>&#8594;</span>
+    
+</div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download our App for Android and iOS</p>
+                <div class="app-logo">
+                    <img src="pictures/hotl.png">
+                   
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="pictures/yourfurniture.png" alt="">
+                <p>Our aim is to provide you wish the most comfortable and low priced furniture</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupouns</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+        </div>
+    </div>
+</div>
+    
+    <script>
+        var MenuItems = document.getElementsById("MenuItems");
+
+        MenuItems.style.maxHeight ="0px"; 
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight= "200px"
+                }
+            else
+                {
+                    MenuItems.style.maxHeight="0px"
+                }
+        }
+    </script>
+    
+
+
+</body>
+</html>
